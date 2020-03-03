@@ -1,4 +1,4 @@
-# vuets
+# neteaseMusic
 
 ## Project setup
 ```
