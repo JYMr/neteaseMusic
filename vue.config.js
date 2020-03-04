@@ -3,7 +3,7 @@ module.exports = {
     loaderOptions: {
       scss: {
         // 引入scss全局变量
-        prependData: `~@import "@/assets/variable.scss";`
+        prependData: `@import "@/assets/variable.scss";`
       }
     }
   }
