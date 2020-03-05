@@ -23,6 +23,10 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+
+### 网易云音乐API
+[文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
+
 ## 基础功能
 
 - 登录
