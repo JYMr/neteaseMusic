@@ -1,0 +1,25 @@
+/*
+    布局
+*/
+.flex {
+  display: flex;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-middle {
+  display: flex;
+  align-items: center;
+}
+.flex-between-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
