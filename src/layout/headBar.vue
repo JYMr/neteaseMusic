@@ -1,15 +1,19 @@
 <template>
-  <div class="headBar flex-between-middle">
-    <div class="flex-middle">
-      <img src="@/assets/images/logo.png" class="logo" alt="logo">
-      <div class="search">
-        <input type="text" placeholder="搜索" />
+  <div class="headBar">
+    <div class="main flex-between-middle">
+      <div class="flex-middle">
+        <img src="@/assets/images/logo.png" class="logo" alt="logo">
+        <div class="search">
+          <input type="text" placeholder="搜索" />
+        </div>
+      </div>
+      <div class="user-info flex-middle">
+        <img src="@/assets/images/ico-user.png" class="avatar" alt="avatar">
+        <div class="name">猫咪一家</div>
+        <div class="logout" title="退出">退出</div>
       </div>
     </div>
-    <div class="user-info flex-middle">
-      <img src="@/assets/images/ico-user.png" class="avatar" alt="avatar">
-      <div class="name">猫咪一家</div>
-    </div>
+
   </div>
 </template>
 
@@ -30,6 +34,9 @@ export default class headBar extends Vue {
     background: $primary-color;
     box-sizing: border-box;
     padding: 0 20px;
+  }
+  .main {
+    height: 100%;
   }
   .search {
     input {
@@ -60,6 +67,9 @@ export default class headBar extends Vue {
     }
     .name {
       margin-left: 10px;
+    }
+    .logout {
+      margin-left: 15px;
     }
   }
 
