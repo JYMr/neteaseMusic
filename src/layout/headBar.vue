@@ -4,7 +4,7 @@
       <div class="flex-middle">
         <img src="@/assets/images/logo.png" class="logo" alt="logo">
         <div class="search">
-          <input type="text" placeholder="搜索" />
+          <input type="text" v-model="keyword" placeholder="搜索" @keyup.enter="getSearch"/>
         </div>
       </div>
       <div class="user-info flex-middle">
@@ -19,11 +19,21 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { search } from '@/api/index'
 import { Component } from 'vue-property-decorator'
 
 @Component
 export default class headBar extends Vue {
-
+  private keyword: String = '';
+  getSearch () {
+    search({
+      keywords: this.keyword
+    }).then(
+      res => {
+        console.log(res)
+      }
+    )
+  }
 }
 </script>
 
