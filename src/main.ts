@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-
+// 测试提交
 new Vue({
   router,
   store,
